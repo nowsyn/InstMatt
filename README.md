@@ -11,8 +11,8 @@ This paper introduces a new matting task called instance human matting (IHM), wh
 
 To provide a general and comprehensive validation on instance matting techniques, we construct an instance matting benchmark,  **IHM2K**, which consists of a synthetic  subset and a natural subset totaling 2,000 images with high-quality matte ground truths. It is organized in the following. Each instance alpha matte is stored in a seperate image.
 
-Download IHM2K from [Google Drive](https://drive.google.com/file/d/1fjqfF-Zn6GoEsp0jPJqDbcGQsHm2YZ4w/view?usp=sharing).
-Dowoload IHM2K from [Baidu Disk](https://pan.baidu.com/s/1FkCx8It85_w6cuV4yW-7nA) (password: relm).
+Download IHM2K from [Google Drive](https://drive.google.com/file/d/1fjqfF-Zn6GoEsp0jPJqDbcGQsHm2YZ4w/view?usp=sharing), or [Baidu Disk](https://pan.baidu.com/s/1FkCx8It85_w6cuV4yW-7nA) (password: relm).
+
 
 ```
 IHM2K/
