@@ -1,6 +1,8 @@
 # InstMatt
 Official repository for *Instance Human Matting via Mutual Guidance and Multi-Instance Refinement* (accepted by CVPR2022).
 
+<img src="figures/teaser.png" alt="width=600" style="zoom:50%;" />
+
 ### Overview
 
 This paper introduces a new matting task called instance human matting (IHM), which requires the pertinent model to automatically predict a precise alpha matte for each human instance.  Straightforward combination of  closely related techniques, namely, instance segmentation, soft segmentation and human/conventional matting, will easily fail in complex cases requiring disentangling mingled colors belonging to multiple instances along hairy and thin boundary structures.  To tackle these technical challenges, we propose an instance human matting framework, called InstMatt, where a novel mutual guidance strategy working in tandem with a multi-instance refinement module is used, for delineating multi-instance relationship among humans with complex and overlapping boundaries if present. A new IHM metric called instance matting quality (IMQ) is proposed, which addresses the absence of a unified and fair means of evaluation emphasizing  both instance recognition and matting quality. Finally, we construct an IHM benchmark for evaluation, which comprises of both synthetic and natural benchmark images. In addition to thorough experimental results on complex cases with multiple and overlapping human instances each has intricate boundaries, preliminary results are presented on general instance matting.
@@ -28,8 +30,8 @@ IHM2K/
             yyy/
             ...
         natural/
-        		zzz/
-        		...
+            zzz/
+            ...
 
 				
 ```
