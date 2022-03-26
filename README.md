@@ -1,5 +1,5 @@
 # InstMatt
-Official repository for *Instance Human Matting via Mutual Guidance and Multi-Instance Refinement* (accepted by CVPR2022).
+Official repository for *Human Instance Matting via Mutual Guidance and Multi-Instance Refinement* (accepted by CVPR2022).
 
 <img src="figures/teaser.png" style="width:550px;" />
 
@@ -57,7 +57,7 @@ If you find our work useful in your research, please consider citing:
 ```
 @inproceedings{sun2022instmatt,
   author    = {Yanan Sun and Chi-Keung Tang and Yu-Wing Tai}
-  title     = {Instance Human Matting via Mutual Guidance and Multi-Instance Refinement},
+  title     = {Human Instance Matting via Mutual Guidance and Multi-Instance Refinement},
   booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
   year      = {2022},
 }
