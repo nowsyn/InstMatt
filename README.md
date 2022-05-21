@@ -1,5 +1,5 @@
 # InstMatt
-Official repository for *Human Instance Matting via Mutual Guidance and Multi-Instance Refinement* (accepted by CVPR2022).
+Official repository for *Human Instance Matting via Mutual Guidance and Multi-Instance Refinement* (CVPR2022 **Oral**).
 
 <img src="figures/teaser.png" style="width:550px;" />
 
