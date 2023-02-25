@@ -1,0 +1,58 @@
+# Refer to utils/config.py for definition and options.
+
+version = "InstMatt-stage1"
+dist = true
+
+[model]
+trimap_channel = 1
+mask_channel = 3
+batch_size = 4
+imagenet_pretrain = true
+imagenet_pretrain_path = "pretrain/model_best_resnet34_En_nomixup.pth"
+self_refine_width1 = 30
+self_refine_width2 = 15
+    [model.arch]
+    encoder = "res_shortcut_encoder_29"
+    decoder = "res_shortcut_decoder_22_3ch"
+
+[train]
+total_step = 200000
+warmup_step = 2000
+val_step = 1000
+clip_grad = true
+G_lr = 1e-4
+min_lr = 1e-5
+rec_weight = 1.0
+lap_weight = 1.0
+comp_weight = 1.0
+alpha_weight = 1.0
+# Uncomment to resume training
+# resume_checkpoint = "latest_model"
+# reset_lr = false
+
+[data]
+train_alpha = "datasets/train_alpha.txt"
+train_merged = "datasets/train_image.txt"
+train_mask = "datasets/train_mask.txt"
+train_fg = "datasets/train_fg.txt"
+train_bg = "datasets/train_bg.txt"
+test_alpha = "datasets/HIM2K/HIM2K_comp_alpha.txt"
+test_merged = "datasets/HIM2K/HIM2K_comp_image"
+test_mask = "datasets/HIM2K_comp_mask.txt"
+workers = 6
+crop_size = 640
+cutmask_prob = 0.25
+augmentation = true
+random_interp = true
+real_world_aug = false
+vertical_flip = false
+
+[log]
+tensorboard_path = "./logs/tensorboard"
+tensorboard_step = 100
+tensorboard_image_step = 100
+logging_path = "./logs/stdout"
+logging_step =  10
+logging_level = "INFO"
+checkpoint_path = "./checkpoints"
+checkpoint_step = 1000
